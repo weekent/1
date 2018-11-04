@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+  width: 20%;
+  position: fixed;
+  height: 100%;
+  overflow:auto;
+}
+ul.sidenav li a {
+  display:block;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+ul.sidenav li a:hover {
+  background-color: black;
+  color:white;
+}
+.content {
+  margin-left: 20.5%;
+  font-size: xx-large;
+}
+@media screen and (max-width:900px){
+  ul.sidenav {
+    width:100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+  }
+  ul.sidenav li a{
+    float:left;
+  }
+  div.content {
+    margin-left:0;
+    margin-top: 7%;
+  }
+}
+@media screen and (max-width: 500px){
+  ul.sidenav li a {
+    text-align: center;
+    float:none;
+  }
+  div.content {
+    margin-top: 300px;
+  }
+}
+</style>
+</head>
+<body>
+<ul class="sidenav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+<div class="content">
+  <h1>What I learned</h1>
+  <br>
+  <p>This is using media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less</p>
+  <p>I have also added a media query for screen that are 400px or less, which will vertically stack and center the navigation links</p>
+  <p>Please let mek now if there is any problem. Thank you very much.</p>
+  <br>
+  <h2>Resize the browser window to see the effect.</h2>
+</div>
+</body>
